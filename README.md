@@ -27,7 +27,7 @@ calibration trials, reducing OS noise (e.g., by running on a lightweight
 kernel), and by not using sleep(n) between calibration trials. However, 
 we nonetheless wanted to see if there existed a more accurate busy 
 wait method, one more tolerant of OS noise, and which might be able to 
-deliever fine-grained durations (on the order of thousands of nanoseconds).
+deliver fine-grained durations (on the order of thousands of nanoseconds).
 
 **Solution**: A collection of work loops utilizing the time stamp counter 
 (available on most modern commodity cpus) to control exiting the loop, and 
